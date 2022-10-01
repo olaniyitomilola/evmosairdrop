@@ -55,7 +55,7 @@ body main form #inputwrapper {
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  border: solid 0.5px white;
+  border: solid 0.05px white;
   border-radius: 15px;
 }
 body main form #inputwrapper #wallet_id {
@@ -65,6 +65,9 @@ body main form #inputwrapper #wallet_id {
   flex: 4;
   outline: none;
   color: white;
+}
+body main form #inputwrapper input:-webkit-autofill {
+  background-color: transparent;
 }
 body main form #inputwrapper #submit {
   padding: 0.5rem;
@@ -82,7 +85,7 @@ body main form #inputwrapper #submit:hover {
   background: linear-gradient(#30a0e7, #6e15e7, #4D49E7);
 }
 body main form #airdropValue {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 2rem;
   background: linear-gradient(#6e15e7, #30a0e7);
   -webkit-background-clip: text;

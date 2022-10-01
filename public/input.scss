@@ -59,7 +59,7 @@ body{
                 align-items:  center;
                 flex-direction: row;
                 justify-content: center;
-                border: solid 0.5px white;
+                border: solid 0.05px white;
                 border-radius: 15px;
 
 
@@ -70,8 +70,9 @@ body{
                     flex: 4;
                     outline: none;
                     color: white;
-
-                    
+                }
+                input:-webkit-autofill{
+                    background-color: transparent;
                 }
                 #submit{
                     padding: 0.5rem;
@@ -92,7 +93,7 @@ body{
                
             }
             #airdropValue{
-                font-size:2rem ;
+                font-size:1.5rem ;
                 margin-top: 2rem;
                 background: linear-gradient(#6e15e7, #30a0e7);
                 -webkit-background-clip: text;
