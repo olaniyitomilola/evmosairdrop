@@ -1,0 +1,107 @@
+$background_color : #030810;
+$secondary_color: #171C24;
+$linear_color: linear-gradient(to left, #6e15e7, #30A0E7);
+
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    background-color: $background_color;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    header{
+        padding-left: 1em;
+        padding-top: 1em;
+        background: linear-gradient(#6e15e7, #30a0e7);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+        span{
+            font-size: 1rem;
+        }
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(100% - 3rem);
+        width: 100%;
+        #logo{
+            width: clamp(250px,100%,500px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2em;
+
+            
+            #imglogo{
+                width: clamp(100px,100%,200px);
+             
+            }
+        }
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: clamp(100px,90%,500px);
+            #inputwrapper{
+                width: 100%;
+                background-color: $secondary_color;
+                display: flex;
+                align-items:  center;
+                flex-direction: row;
+                justify-content: center;
+                border: solid 0.5px white;
+                border-radius: 15px;
+
+
+                #wallet_id{
+                    padding: 0.5rem;
+                    border: none;
+                    background-color: transparent;
+                    flex: 4;
+                    outline: none;
+                    color: white;
+
+                    
+                }
+                #submit{
+                    padding: 0.5rem;
+                    cursor: pointer;
+                    border: none;
+                    width: inherit;
+                    font-weight: 800;
+                    color: white;
+                    background: linear-gradient(#6e15e7, #30a0e7);
+                    flex: 1;
+                    border-radius: 15px;
+                    transition: background 2s;
+                }
+                #submit:hover{
+                    background: linear-gradient(#30a0e7,#6e15e7, #4D49E7);
+
+                }
+               
+            }
+            #airdropValue{
+                font-size:2rem ;
+                margin-top: 2rem;
+                background: linear-gradient(#6e15e7, #30a0e7);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+           
+             
+        }
+        
+    }
+    
+}
