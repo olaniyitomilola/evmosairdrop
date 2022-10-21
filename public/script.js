@@ -21,7 +21,7 @@ const getData = async ()=>{
         const id = walletId.value.trim();
         if(!id){
             value.style.fontSize = '1rem'
-            return value.innerText = 'kindly input your ID'
+            return value.innerText = 'kindly input your evmos wallet id'
         }
         const myDrop = AllDrop.find(keys=>keys === id)
         console.log(myDrop,id)
